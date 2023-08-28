@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #2d2d2d;
+  --accent-color: #ff9900;
+  --text-color: #ffffff;
+  --review-bg-color: #222222;
+}
+
+body, #app {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  color: var(--text-color);
+}
