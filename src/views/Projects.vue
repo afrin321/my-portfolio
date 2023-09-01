@@ -1,6 +1,8 @@
 <script setup>
 
+function goTo(link) {
 
+}
 
 
 </script>
@@ -12,10 +14,11 @@
       <div class="project-grid animation">
         <!-- Project 1 -->
         <div class="project-item">
-          <h3 class="item-title">Contact Flo</h3>
+          <h3 class="item-title">Contact Flo <a href="https://github.com/afrin321/ContactFlo" class="project-link">🔗</a></h3>
           <p class="item-description">
             Email Service API for contact forms built with Spring Boot. Simplifying communication for businesses.
           </p>
+          
           <div class="chips">
             <div class="chip backend">Backend</div>
             <div class="chip monolith">Monolith</div>
@@ -37,7 +40,7 @@
 
         <!-- Project 3 -->
         <div class="project-item">
-          <h3 class="item-title">Digilogue</h3>
+          <h3 class="item-title">Digilogue <a href="https://github.com/afrin321/Digilogue_Network" class="project-link">🔗</a></h3>
           <p class="item-description">
             Full Stack MERN Tech Blog 
           </p>
@@ -70,7 +73,7 @@
 
         <!-- Project 4 -->
         <div class="project-item">
-          <h3 class="item-title">Automation Scaffolds</h3>
+          <h3 class="item-title">Automation Scaffolds <a href="#" class="project-link">🔗</a></h3>
           <p class="item-description">
             Automating the building of different projects in Windows machine using Powershell scripts
           </p>
@@ -80,7 +83,7 @@
         </div>
 
         <div class="project-item">
-          <h3 class="item-title">RoadStar Ui</h3>
+          <h3 class="item-title">RoadStar Ui <a href="https://afrin321.github.io/roadstar.ui/" class="project-link">🔗</a></h3>
           <p class="item-description">
             Frontend Challenge for vehicle booking
           </p>
@@ -90,7 +93,7 @@
         </div>
 
         <div class="project-item">
-          <h3 class="item-title">Avatown</h3>
+          <h3 class="item-title">Avatown <a href="https://afrin321.github.io/dolami-coding-test-afrin-haque/" class="project-link">🔗</a></h3>
           <p class="item-description">
             E-Commerce UI with pagination, filtering
           </p>
@@ -100,7 +103,7 @@
         </div>
 
         <div class="project-item">
-          <h3 class="item-title">Personal Portfolio</h3>
+          <h3 class="item-title">Personal Portfolio <a href="#" class="project-link">🔗</a></h3>
           <p class="item-description">
             VueJS and CSS
           </p>
@@ -118,7 +121,10 @@
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
    
-
+    .project-link {
+      text-decoration: none;
+      font-size: 16px !important;
+    }
 .section-title {
     font-size: 36px;
     font-weight: bold;

@@ -5,7 +5,7 @@ const angles = ['0', '30', '60', '90', '-60', '-30']
 
 const goToProject = () => {
     // alert("project")
-    const el = document.getElementById('project');
+    const el = document.getElementById('projects');
     el.scrollIntoView({behavior: "smooth"});
 }
 
@@ -20,7 +20,9 @@ const goToContact = () => {
 <template>
     <section id="hero" class="hero">
     <div class="content">
-      <h1 class="name fade-in-text">Afrin Haque</h1>
+      <h1 class="name fade-in-text">Afrin Haque 
+        <!-- <span style="text-shadow: none;">👽</span> -->
+      </h1>
       <p class="role">Software Engineer 👩🏻‍💻</p>
       <div class="brand-statement">
         <p>Exploring the Intersection of Web Development, Cyber Security, and Emerging Technologies. 📈🌐🗞️</p>

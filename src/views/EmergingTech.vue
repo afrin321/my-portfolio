@@ -70,8 +70,8 @@ const emergingTech = ref([
             <div class="tech-chips">
               <span v-for="chip in tech.techChips" :key="chip" class="tech-chip">{{ chip }}</span>
             </div>
-            <div class="article-links">
-              <p>Explore more:</p>
+            <div class="article-links" title="coming soon!">
+              <p  title="coming soon!">Explore more:</p>
               <ul>
                 <li v-for="link in tech.articleLinks" :key="link"><a :href="link">{{ link }}</a></li>
               </ul>

@@ -6,6 +6,7 @@
 </script>
 
 <template>
+    
     <footer class="footer">
       <p>&copy; 2023 Afrin Haque. All rights reserved. 💪</p>
     </footer>
@@ -23,8 +24,5 @@
         font-family: "Martian Mono", monospace;
     }
    
-
-
-
-   
+     
 </style>

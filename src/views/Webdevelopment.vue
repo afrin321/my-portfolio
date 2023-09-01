@@ -1,4 +1,15 @@
 <script setup>
+import { ref } from 'vue';
+
+  const extendedListFrontend = ref(" ...")
+
+  function toggleList() {
+    if (extendedListFrontend.value == " ...") {
+      extendedListFrontend.value = " Tailwind, Bootstrap, JQuery"
+    } else {
+      extendedListFrontend.value = " ..."
+    }
+  }
 
 </script>
 
@@ -19,7 +30,7 @@
         <div class="web-development-section frontend">
           <h3>Frontend Development</h3>
           <p>Creating stunning user interfaces and engaging user experiences using modern web technologies.</p>
-          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Vue.js, React</p>
+          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Vue.js, React,<span @click="toggleList" >{{ extendedListFrontend }}</span></p>
         </div>
         <div class="web-development-section backend">
           <h3>Backend Development</h3>

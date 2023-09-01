@@ -1,31 +1,27 @@
 <script setup>
-// import myFile from './../assets/AfrinHaque_CV.pdf';
+import myFile from './../assets/Afrin_Haque_CV.pdf';
 
 
-// const downloadFile = () => {
-//     const link = document.createElement('a');
-//       link.href = myFile;
-//       link.download = 'AfrinHaque_CV.pdf'; // Specify the desired filename for the downloaded file
-//       document.body.appendChild(link);
-//       link.click();
-//       document.body.removeChild(link);
-// }
+const downloadFile = () => {
+    const link = document.createElement('a');
+      link.href = myFile;
+      link.download = 'AfrinHaque_CV.pdf'; // Specify the desired filename for the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+}
 
 </script>
 
 <template>
-    <div class="app">
-      <!-- ... Other sections ... -->
-  
-      <!-- Contact Section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="content">
           <div class="contact-content">
             <div class="about-me">
               <div class="circle-image">
                 <img src="./../assets/afrin.jpeg" alt="Profile Photo">
               </div>
-              <h2 class="section-title animation">About Me</h2>
+              <h2 class="section-title animation">About Me <span style="text-shadow: none;">🧋</span></h2>
               <div class="tech-hashtags">💻 TechGeek 👁️‍🗨️ INFP-T 📚 Bookworm 🍵 TeaConnoisseur</div>
               <div class="value-proposition animation">
                 <p>
@@ -37,21 +33,22 @@
               </div>
               <div class="resume-button">
                 <a href="/path-to-your-resume.pdf" download>
-                  <button class="download-button">Download Resume 📄</button>
+                  <button  @click="downloadFile" class="download-button">Download Resume 📄</button>
                 </a>
               </div>
             </div>
             <div class="contact-form">
               <h2 class="section-title animation">Contact</h2>
-              <form>
+              <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key"  value="fb785873-c1e6-4263-81da-67b01794ba87">
               <div class="form-group">
-                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="text" name="name"  placeholder="Your Name" class="form-input" required>
               </div>
               <div class="form-group">
-                <input type="email" placeholder="Your Email" class="form-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="form-input" required>
               </div>
               <div class="form-group">
-                <textarea placeholder="Your Message" class="form-input" required></textarea>
+                <textarea placeholder="Your Message" name="message" class="form-input" required></textarea>
               </div>
               <div class="form-group">
                 <button type="submit" class="send-button">Send</button>
@@ -61,12 +58,11 @@
           </div>
         </div>
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://medium.com/@afrinhaque19" target="_blank" class="social-link"><i class="fab fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/afrin-haque-dev/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/cyberdev_in/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
       </section>
-    </div>
     
   </template>
   
